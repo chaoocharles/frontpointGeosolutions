@@ -11,6 +11,8 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 a {
@@ -125,7 +127,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   padding: 20px 0;
-  height: 94px;
+  height: 110px;
   transition: all 0.5s;
   z-index: 997;
   background: #fff;
@@ -279,7 +281,7 @@ h6 {
 /* Nav Menu Essentials */
 .nav-menu,
 .nav-menu * {
-  margin: 0;
+  margin-top: 10px;
   padding: 0;
   list-style: none;
 }
@@ -621,6 +623,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: #fff;
   transition: 0.4s;
+  height: 300px;
+  overflow-y: auto;
 }
 
 #services .box:hover {
