@@ -80,15 +80,16 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #fff;
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
   border-bottom: 1px solid #eee;
   font-size: 14px;
 }
 
+#topbar .contact-info,
 #topbar .contact-info a {
   line-height: 1;
-  color: #555;
+  color: rgb(255, 254, 254);
 }
 
 #topbar .contact-info a:hover {
@@ -96,7 +97,7 @@ h6 {
 }
 
 #topbar .contact-info i {
-  color: #b5302b;
+  color: #c02a25;
   padding: 4px;
 }
 
@@ -107,7 +108,7 @@ h6 {
 }
 
 #topbar .social-links a {
-  color: #555;
+  color: rgb(255, 255, 255);
   padding: 4px 12px;
   display: inline-block;
   line-height: 1px;
@@ -144,13 +145,13 @@ h6 {
 }
 
 #header #logo h1 a {
-  color: #0c2e8a;
+  color: #ffffff;
   line-height: 1;
   display: inline-block;
 }
 
 #header #logo h1 a span {
-  color: #b5302b;
+  color: #ffffff;
 }
 
 #header #logo img {
@@ -174,6 +175,13 @@ h6 {
   }
 }
 
+.landing-page {
+  background: url("../img/intro-carousel/2.jfif") no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -181,7 +189,6 @@ h6 {
   width: 100%;
   height: 70vh;
   position: relative;
-  background: url("../img/intro-carousel/1.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -197,17 +204,23 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#intro .intro-content h1 a {
+  font-weight: 700;
+  color: white;
 }
 
 #intro .intro-content h3 {
-  color: #0c2e8a;
+  color: #ffffff;
   margin-bottom: 30px;
   font-size: 55px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 #intro .intro-content h3 span {
-  color: #b5302b;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -286,13 +299,14 @@ h6 {
 .nav-menu * {
   padding: 0;
   list-style: none;
+  color: white;
 }
 
 .nav-menu ul {
   position: absolute;
   display: none;
   top: 100%;
-  left: 0;
+  right: 0;
   z-index: 99;
 }
 
@@ -302,17 +316,12 @@ h6 {
 }
 
 .nav-menu > li {
-  float: left;
+  float: right;
 }
 
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
   display: block;
-}
-
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
 }
 
 .nav-menu ul li {
@@ -343,7 +352,8 @@ h6 {
   position: fixed;
   z-index: 997;
   right: 0px;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -357,7 +367,7 @@ h6 {
   padding: 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #555;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -573,21 +583,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .content {
-  background-color: white;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 300px;
   padding: 30px;
-  opacity: 0.9;
+  border-radius: 9px;
 }
 
 #about .content h2 {
-  color: #0c2e8a;
+  color: #0832a8;
+  font-weight: 500px;
   font-weight: 700;
   font-size: 36px;
   font-family: "Raleway", sans-serif;
 }
 
 #about .content h3 {
-  color: rgb(0, 0, 0);
-  font-weight: 300;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
   font-size: 18px;
   line-height: 26px;
   font-style: italic;
@@ -678,6 +691,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
+  #intro .intro-content h1 a {
+    font-size: 25px;
+  }
   #services .box .box {
     margin-bottom: 20px;
   }
