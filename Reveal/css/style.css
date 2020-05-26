@@ -157,7 +157,9 @@ h6 {
 #header #logo img {
   position: absolute;
   z-index: 997;
-  left: 0;
+  height: 250px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 @media (max-width: 768px) {
@@ -176,6 +178,7 @@ h6 {
 .landing-page {
   background: url("../img/intro-carousel/2.jfif") no-repeat;
   background-size: cover;
+  backface-visibility: hidden;
   height: 100%;
   width: 100%;
 }
